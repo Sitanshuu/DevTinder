@@ -3,7 +3,7 @@
 
 - Create a repository
 - Initialize the repository
-- node_modules, package.json, package-lock.json
+- Read about node_modules, package.json, package-lock.json
 - Install express
 - Create a server
 - Listen to a port
