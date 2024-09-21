@@ -1,5 +1,3 @@
-// Starting Point Of Our Application..
-
 const express = require("express");
 
 
@@ -7,17 +5,15 @@ const express = require("express");
 const PORT = process.env.PORT || 2000;
 const app = express();
 
-// The below function is known as request handler.
-app.use("/hello", (req, res) =>{
-    res.send("Hello From The Server !! This is the hello page!!");
+
+// This will only handle GET call to /user
+app.get("/user", (req, res) =>{
+    res.send({firstName: "Sitanshu", lastName: "Das", country: "India", state: "Odisha"});
 });
 
-app.use("/test", (req, res) =>{
+// This will match all the HTTP method API calls to /test
+app.use(["/test", "/"], (req, res) =>{
     res.send("This is the test page!!");
-});
-
-app.use(["/", "/home"], (req, res) =>{
-    res.send("This is the home page!!");
 });
 
 
