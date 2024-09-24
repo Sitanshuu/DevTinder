@@ -1,5 +1,5 @@
-# Lecture-3
-# ----------
+# Lecture-3 (Creating Express Server)
+# ------------------------------------
 
 - Create a repository
 - Initialize the repository
@@ -14,8 +14,8 @@
 - Difference between caret(^) and tilde(~)
 
 
-# Lecture-4
-# ----------
+# Lecture-4 (Routing & Request Handlers)
+# ---------------------------------------
 
 - Initialize git
 - Create .gitignore
@@ -25,8 +25,18 @@
 - Order of the routes matters a lot
 - Install postman app and make a workspace/collection > make a test API Call
 - Write logic to handle GET, POST, PATCH, PUT, DELETE API Calls and test them in postman
-- 
+- Difference between req.params & req.query
+- Explore routing and use of "?", "+", "()", "*" in the routes
+- Use of REGEX in the routes
+- Reading the query params in the routes
+- Reading the dynamic routes
 
 
-# Lecture-5
-# ----------
+# Lecture-5 (Middlewares & Error Handlers)
+# -----------------------------------------
+
+- Multiple route handlers
+- next() function & errors along with res.send()
+- Explore app.use(<path>, rH1, rH2, [rH3, rH4, rH5])
+- Read more about middleware functions
+- How express js basically handles requests behind the scenes 
