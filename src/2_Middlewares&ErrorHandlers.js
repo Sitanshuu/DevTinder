@@ -1,4 +1,5 @@
 const express = require("express");
+const {adminAuth} = require("./middlewares/auth");
 
 
 
@@ -30,6 +31,34 @@ app.get("/user", (req, res, next) =>{     // Independent Route Handler Of /user 
 
 app.get("/", (req, res) =>{     // Home Route..
     res.send("This is the homepage of the application running on PORT: 2222");
+});
+
+// ============================================================================================
+
+app.use("/admin", adminAuth);
+
+app.get("/admin/getAllData", (req, res) =>{
+    res.send("All Data Sent!!");
+});
+
+app.delete("/admin/deleteUser", (req, res) =>{
+    res.send("User Deleted Successfully!!");
+});
+
+// ============================================================================================
+
+app.get("/student", (req, res) =>{
+    // Logic of DB Call and get Students data..
+    throw new Error("This is the dummy error !!");      // We must write all our code inside of the try and catch block to prevent errors..
+    res.send("User Data Sent!!");
+});
+
+// This is known as wildcard error handling..(Must be written at the end of all request handlers)..
+app.use("/", (err, req, res, next) =>{     // Gracefully handling error in any request handler.. 
+    if (err){
+        // Log your errors here..
+        res.status(500).send("Something Went Wrong!!");
+    }
 });
 
 
