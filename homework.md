@@ -44,3 +44,16 @@
 - Write a dummy auth middleware for admin
 - Write a dummy auth middleware for all user routes, except /user/login
 - Error handling using app.use()
+
+
+# Lecture -6 (Database, Schemas & Models)
+# ----------------------------------------
+
+- Create a free cluster on Mondb website
+- Install mongoose library
+- Connect your application to the database
+- Call the connectDB function and connect to the database before listening to the incoming requests
+- Create a userSchema & user model
+- Create POST /signup API to add data to the database
+- Push some documents using API Calls from postman
+- Handle some errors using try & catch block
