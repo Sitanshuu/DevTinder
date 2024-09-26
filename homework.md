@@ -25,6 +25,7 @@
 - Order of the routes matters a lot
 - Install postman app and make a workspace/collection > make a test API Call
 - Write logic to handle GET, POST, PATCH, PUT, DELETE API Calls and test them in postman
+- Difference between PATCH vs PUT requests
 - Difference between req.params & req.query
 - Explore routing and use of "?", "+", "()", "*" in the routes
 - Use of REGEX in the routes
@@ -46,7 +47,7 @@
 - Error handling using app.use()
 
 
-# Lecture -6 (Database, Schemas & Models)
+# Lecture-6 (Database, Schemas & Models)
 # ----------------------------------------
 
 - Create a free cluster on Mondb website
@@ -57,3 +58,19 @@
 - Create POST /signup API to add data to the database
 - Push some documents using API Calls from postman
 - Handle some errors using try & catch block
+
+
+# Lecture-7 (Diving Into API's)
+# ------------------------------
+
+- Difference between javascript object VS JSON
+- Add express.json() middleware to your application
+- User.findOne() with duplicate values in the database
+- API - POST /signup - add user to the database
+- API - GET /user - get user based on their emailId
+- API - GET /feed - get all users from the database
+- API - DELETE /user - delete user based on their _id
+- API - PATCH /user - update user based on their _id
+- API - PATCH /user - update user based on their emailId
+- Explore the mongoose documentation for Models
+- Explore options parameter in Model.findOneAndUpdate()
