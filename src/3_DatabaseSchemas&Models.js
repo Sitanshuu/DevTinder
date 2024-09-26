@@ -9,12 +9,12 @@ const app = express();
 
 app.post("/signup", async (req, res) =>{
     const userObj = {
-        firstName: "Ananya",
-        lastName: "Das",
-        emailId: "ananyadas2001@gmail.com",
-        password: "Ananya@2001",
+        firstName: "Subham",
+        lastName: "Jena",
+        emailId: "jenasubham@gmail.com",
+        password: "subjin123",
         age: 23,
-        gender: "Female"
+        gender: "Male"
     };
 
     const user = new User(userObj);     // Creating new instance of a User model..
