@@ -1,7 +1,6 @@
 const express = require("express");
 const { connectDB } = require("./config/database");
-const User = require("./models/user");
-
+const User = require("./models/user1");
 
 
 const PORT = process.env.PORT || 4444;
@@ -22,7 +21,7 @@ app.post("/signup", async (req, res) =>{
 
     try{
         await user.save();
-        res.send("User Added Successfully..");
+        res.send({ Message: "User Added Successfully"});
     }
     catch(err){
         res.status(400).send(`Something Went Wrong: ${err.message}`);
@@ -89,10 +88,9 @@ app.patch("/user", async (req, res) =>{
 app.patch("/user", async (req, res) =>{
     const emailId = req.body.emailId;
     const updatedData = req.body;
-    const query = { emailId: emailId };
 
     try{
-        const user = await User.findOneAndUpdate(query, updatedData);
+        const user = await User.findOneAndUpdate({emailId: req.body.emailId}, updatedData);
         console.log(user);
         res.send({ message: "User Updated Successfully" });
     }
