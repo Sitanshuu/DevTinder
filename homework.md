@@ -74,3 +74,23 @@
 - API - PATCH /user - update user based on their emailId
 - Explore the mongoose documentation for Models
 - Explore options parameter in Model.findOneAndUpdate()
+
+
+# Lecture-8 (Data Sanitization & Validations)
+# --------------------------------------------
+
+ - Expolre schematypes options from the mongoose documentation
+ - Add required, min, max, minLength, maxLength, unique, lowercase, trim
+ - Add default and custom validate function to the schema
+ - Improve the DB Schema (Put all appropriate validations on each field in schema)
+ - Add timestamps to the schema
+ - Add API level validations for patch requests and signup post API
+ - Add API validations for each field
+ - Install Validator
+ - Explore the validator library functions and use them
+
+
+ # Lecture-9 (Encrypting Passwords)
+ # ---------------------------------
+
+ - 
