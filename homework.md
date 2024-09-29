@@ -88,7 +88,8 @@
  - Add API validations for each field
  - Install Validator
  - Explore the validator library functions and use them
-
+ - NEVER TRUST req.body (Anything malicious can be sent by the users)
+ 
 
  # Lecture-9 (Encrypting Passwords)
  # ---------------------------------
