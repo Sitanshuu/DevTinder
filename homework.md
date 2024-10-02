@@ -110,4 +110,18 @@
  # Lecture-10 (Authentication, JWT & Cookies)
  # -------------------------------------------
 
- - 
+ - Install cookie-parser
+ - Send a dummy cookie to user
+ - Create GET /profile API & check if you get the cookie back
+ - Install JWT 
+ - In login API, after email and password validation, create a jwt token and send 
+   it back to user inside cookies
+ - Read the cookies inside the /profile API and send the user back if available & 
+   logged in
+ - Write the userAuth middleware
+ - Add the userAuth middleware in profile API & create a new POST 
+   /sendConnectionRequest API with userAuth middleware
+ - Set the expiry of JWT and Cookies to 7 days
+ - Create userSchema methods to create token and compare passwords in 
+   /models/users.js (Refactor the code to offload to the schema helper functions)
+   
