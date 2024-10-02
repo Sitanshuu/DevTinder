@@ -124,4 +124,9 @@
  - Set the expiry of JWT and Cookies to 7 days
  - Create userSchema methods to create token and compare passwords in 
    /models/users.js (Refactor the code to offload to the schema helper functions)
-   
+
+
+ # Lecture-11 (Diving Into APIs & Express Router)
+ # -----------------------------------------------
+
+ - 
