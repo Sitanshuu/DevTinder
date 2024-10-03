@@ -1,5 +1,4 @@
 # Lecture-3 (Creating Express Server)
-# ------------------------------------
 
 - Create a repository
 - Initialize the repository
@@ -15,7 +14,6 @@
 
 
 # Lecture-4 (Routing & Request Handlers)
-# ---------------------------------------
 
 - Initialize git
 - Create .gitignore
@@ -35,7 +33,6 @@
 
 
 # Lecture-5 (Middlewares & Error Handlers)
-# -----------------------------------------
 
 - Multiple route handlers
 - next() function & errors along with res.send()
@@ -49,7 +46,6 @@
 
 
 # Lecture-6 (Database, Schemas & Models)
-# ----------------------------------------
 
 - Create a free cluster on Mondb website
 - Install mongoose library
@@ -63,7 +59,6 @@
 
 
 # Lecture-7 (Diving Into API's)
-# ------------------------------
 
 - Difference between javascript object VS JSON
 - Add express.json() middleware to your application
@@ -79,7 +74,6 @@
 
 
 # Lecture-8 (Data Sanitization & Validations)
-# --------------------------------------------
 
  - Expolre schematypes options from the mongoose documentation
  - Add required, min, max, minLength, maxLength, unique, lowercase, trim
@@ -94,7 +88,6 @@
 
 
  # Lecture-9 (Encrypting Passwords)
- # ---------------------------------
 
  - Validate data in /signup API by creating the helper function or utility function
  - Install bcrypt package
@@ -108,7 +101,6 @@
 
 
  # Lecture-10 (Authentication, JWT & Cookies)
- # -------------------------------------------
 
  - Install cookie-parser
  - Send a dummy cookie to user
@@ -127,6 +119,5 @@
 
 
  # Lecture-11 (Diving Into APIs & Express Router)
- # -----------------------------------------------
 
  - 
