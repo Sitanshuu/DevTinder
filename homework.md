@@ -75,49 +75,52 @@
 
 # Lecture-8 (Data Sanitization & Validations)
 
- - Expolre schematypes options from the mongoose documentation
- - Add required, min, max, minLength, maxLength, unique, lowercase, trim
- - Add default and custom validate function to the schema
- - Improve the DB Schema (Put all appropriate validations on each field in schema)
- - Add timestamps to the schema
- - Add API level validations for patch requests and signup post API
- - Add API validations for each field
- - Install Validator
- - Explore the validator library functions and use them
- - NEVER TRUST req.body (Anything malicious can be sent by the users)
+- Expolre schematypes options from the mongoose documentation
+- Add required, min, max, minLength, maxLength, unique, lowercase, 
+  trim
+- Add default and custom validate function to the schema
+- Improve the DB Schema (Put all appropriate validations on each 
+  field in schema)
+- Add timestamps to the schema
+- Add API level validations for patch requests and signup post API
+- Add API validations for each field
+- Install Validator
+- Explore the validator library functions and use them
+- NEVER TRUST req.body (Anything malicious can be sent by the 
+  users)
 
 
- # Lecture-9 (Encrypting Passwords)
+# Lecture-9 (Encrypting Passwords)
 
- - Validate data in /signup API by creating the helper function or utility function
- - Install bcrypt package
- - Create passwordHash using bcrypt.hash() and save the user with encrypted 
-   password
- - Never ever disclose important information from the DB or the Server
- - Dont expose extra informations from the DB or the Database
- - Create login API
- - Validate the data
- - Compare passwords and throw errors if email or password is invalid
-
-
- # Lecture-10 (Authentication, JWT & Cookies)
-
- - Install cookie-parser
- - Send a dummy cookie to user
- - Create GET /profile API & check if you get the cookie back
- - Install JWT 
- - In login API, after email and password validation, create a jwt token and send 
-   it back to user inside cookies
- - Read the cookies inside the /profile API and send the user back if available & 
-   logged in
- - Write the userAuth middleware
- - Add the userAuth middleware in profile API & create a new POST 
-   /sendConnectionRequest API with userAuth middleware
- - Set the expiry of JWT and Cookies to 7 days
- - Create userSchema methods to create token and compare passwords in 
-   /models/users.js (Refactor the code to offload to the schema helper functions)
+- Validate data in /signup API by creating the helper function or utility function
+- Install bcrypt package
+- Create passwordHash using bcrypt.hash() and save the user with encrypted 
+  password
+- Never ever disclose important information from the DB or the Server
+- Dont expose extra informations from the DB or the Database
+- Create login API
+- Validate the data
+- Compare passwords and throw errors if email or password is invalid
 
 
- # Lecture-11 (Diving Into APIs & Express Router)
+# Lecture-10 (Authentication, JWT & Cookies)
 
- - 
+- Install cookie-parser
+- Send a dummy cookie to user
+- Create GET /profile API & check if you get the cookie back
+- Install JWT 
+- In login API, after email and password validation, create a jwt token and send 
+  it back to user inside cookies
+- Read the cookies inside the /profile API and send the user back if available & 
+  logged in
+- Write the userAuth middleware
+- Add the userAuth middleware in profile API & create a new POST 
+  /sendConnectionRequest API with userAuth middleware
+- Set the expiry of JWT and Cookies to 7 days
+- Create userSchema methods to create token and compare passwords in 
+  /models/users.js (Refactor the code to offload to the schema helper functions)
+
+
+# Lecture-11 (Diving Into APIs & Express Router)
+
+- 
