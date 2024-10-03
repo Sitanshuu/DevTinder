@@ -1,5 +1,4 @@
 # DevTinder API's
-# ----------------
 
 ## authRouter =>
 - POST /signup (Signs up a new user to devtinder)
