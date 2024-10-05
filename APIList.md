@@ -1,14 +1,14 @@
 # DevTinder API's
 
 ## authRouter =>
-- POST /signup (Signs up a new user to devtinder)
-- POST /login (Login a registered user to devtinder)
-- POST /logout (Logout a regestered and logged in user from devtinder)
+- POST /signup (Signs up a new user to devtinder)   ==> (Done)
+- POST /login (Login a registered user to devtinder)   ==> (Done)
+- POST /logout (Logout a regestered and logged in user from devtinder)   ==> (Done)
 
 ## profileRouter =>
-- GET /profile/view (Get profile of a logged in user)
-- POST /profile/edit (Update profile of a logged in user)
-- POST /profile/password (Update password of a logged in user)
+- GET /profile/view (Get profile of a logged in user)   ==> (Done)
+- POST /profile/edit (Update profile of a logged in user)   ==> (Done)
+- POST /profile/password (Update password of a logged in user)   ==> (Done)
 
 ## connectionRequestRouter =>
 - POST /request/review/accepted/:userId ()
