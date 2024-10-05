@@ -33,6 +33,8 @@ const userAuth = async (req, res, next) =>{
             throw new Error("User not present");
         };
         req.user = user;
+
+        req.token = token;     // Experimental..
         next();
     }
     catch(err){
