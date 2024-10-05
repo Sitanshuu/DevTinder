@@ -123,4 +123,6 @@
 
 # Lecture-11 (Diving Into APIs & Express Router)
 
-- 
+- Read documentation for express.Router()
+- Create routes folder for managing auth, profile and request routes
+- Create Routers and import in app.js
