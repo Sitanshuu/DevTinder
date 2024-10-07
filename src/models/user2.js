@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 
 
+// index: true || unique: true 
+// will create index in the schema for faster retrieval of data..
 const userSchema = new mongoose.Schema({
     firstName: {
         type: String,
@@ -16,7 +18,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         lowercase: true,
         required: true,
-        unique: true,
+        unique: true,      // MongoDB will automatically create index for unique: true
         trim: true,
         validate(value){    // Email validation using validator package..
             if (!validator.isEmail(value)){
