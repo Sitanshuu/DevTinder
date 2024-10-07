@@ -126,3 +126,18 @@
 - Read documentation for express.Router()
 - Create routes folder for managing auth, profile and request routes
 - Create Routers and import in app.js
+
+
+# Lecture-12 (Logical DB Query & Compound Indexes)
+
+- Create Connection Request schema
+- Send connection request API with proper validation of data
+- Think about all corner cases
+- Comparision queries in mongoDB
+- $or query and $and query in mongoDB (logical queries in mongodb)
+- Read more about indexes in mongoDB
+- Read about schema.pre("save", function (){}) functions
+- Why do we need index in DB
+- Advantages & disadvantages of creating index in mongodb
+- Read more about compound indexes
+- ALWAYS THINK ABOUT CORNER CASES WHILE BUILDING API'S
