@@ -11,6 +11,8 @@
 - POST /profile/password (Update password of a logged in user)   ==> (Done)
 
 ## connectionRequestRouter =>
+- POST /request/send/:status/:userId (Send connection request)    => (Done)
+
 - POST /request/review/accepted/:userId ()
 - POST /request/review/rejected/:userId ()
 
