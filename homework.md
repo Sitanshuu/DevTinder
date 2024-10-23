@@ -141,3 +141,18 @@
 - Advantages & disadvantages of creating index in mongodb
 - Read more about compound indexes
 - ALWAYS THINK ABOUT CORNER CASES WHILE BUILDING API'S
+
+
+# Lecture-13 (ref, Populate & Thought Process Of Writting API'S)
+
+- Thought process of POST & GET Api's
+- Read about ref & populate
+- Create GET /user/request/received with all the checks
+- Create GET /user/connections API with all checks
+
+
+# Lecture-14 (Building Feed API & Pagination)
+
+- Think and explore for the logic of GET /user/feed
+- Query operators in MongoDB ($nin, $ne, etc..)
+- 
