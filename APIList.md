@@ -11,12 +11,14 @@
 - POST /profile/password (Update password of a logged in user)   ==> (Done)
 
 ## connectionRequestRouter =>
+- (SENDER'S END)
 - POST /request/send/:status/:userId (Send connection request)    => (Done)
 
-- POST /request/review/accepted/:userId ()
-- POST /request/review/rejected/:userId ()
+- (RECEIVER'S END)
+- POST /request/review/:status/:requestId (Review connection request)    => (Done)
 
 ## userRouter =>
-- GET /user/connections (Get all connections of a logged in user)
-- GET /user/requests (Get all requests received to a logged in user)
+- GET /user/requests (Get all the pending connection requests of a loggedin   
+  user)    => (Done)
+- GET /user/connections (Get all connections of a logged in user)    => (Done)
 - GET /user/feed (Gets the profiles of other users in the platform)
